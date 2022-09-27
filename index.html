@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="./index.js"></script>
     <title>Form Validation</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Registration Form</h1>
-</body>
+
+    <table>
+      <form>
+        <tr>
+          <td><label for="nom">Nom:*</label></td>
+          <td><input type="text" id="nom" placeholder="Nom" minlength="3" required/></td>
+          <td>
+            <input type="text" id="prenom" placeholder="Prenom" minlength="3" required/>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="sexe">Sexe:</label></td>
+          <td>
+            <select name="sexe" id="sexe">
+                <option value="0">Homme</option>
+                <option value="1">Femme</option>
+          </td>
+          </select>
+        </tr>
+        <tr>
+          <td><label for="naissance">Date de naissance:*</label></td>
+          <td><input type="date" required/></td>
+        </tr>
+        <tr>
+          <td><label for="adresse">Adresse:*</label></td>
+          <td><input type="text" required/></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="adresse2">2ème ligne adr. (facult.):</label>
+          </td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td><label for="postal">Code postal:*</label></td>
+          <td><input type="text" id="postal" required/></td>
+        </tr>
+        <tr>
+          <td><label for="ville">Ville:*</label></td>
+          <td><input type="text" id="ville" required/></td>
+        </tr>
+        <tr>
+          <td><label for="tel">Telephone:</label></td>
+          <td><input type="text" id="tel" /></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Inscription" />
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
 </html>
