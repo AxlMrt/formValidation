@@ -16,12 +16,12 @@
     <h1>Registration Form</h1>
 
     <table>
-      <form>
+      <form id="formDesk">
         <tr>
           <td><label for="nom">Nom:*</label></td>
-          <td><input type="text" id="nom" placeholder="Nom" minlength="3" required/></td>
+          <td><input type="text" id="nom" placeholder="Nom" minlength="3" required pattern="[a-zA-Z]+"/></td>
           <td>
-            <input type="text" id="prenom" placeholder="Prenom" minlength="3" required/>
+            <input type="text" id="prenom" placeholder="Prenom" minlength="3" required pattern="[a-zA-Z]+"/>
           </td>
         </tr>
         <tr>
@@ -56,12 +56,16 @@
           <td><input type="text" id="ville" required/></td>
         </tr>
         <tr>
-          <td><label for="tel">Telephone:</label></td>
-          <td><input type="text" id="tel" /></td>
+            <td><label for="adresse">Adresse mail:*</label></td>
+            <td><input type="mail" id="mail" required/></td>
+        </tr>
+        <tr>
+            <td><label for="tel">Telephone:</label></td>
+            <td><input type="text" id="tel" /></td>
         </tr>
         <tr>
           <td>
-            <input type="submit" value="Inscription" />
+            <input type="submit" value="Inscription" id="submitBtn"/>
           </td>
         </tr>
       </form>
